@@ -1,0 +1,92 @@
+$width-list: 10 20 30 40 35 45 50 60 65 70 80 100 120 130 140 150 180 200 210 300 400;
+
+$width-percent-list: 10 20 25 30 33 40 49 50 60 65 70 75 80 90 100;
+
+@each $value in $width-list {
+  .width_#{$value} {
+    width: #{$value}px;
+  }
+}
+
+@each $value in $width-percent-list {
+  .width_#{$value}_vw {
+    width: #{$value}vw;
+  }
+  .width_#{$value}_percent {
+    width: #{$value * 1%};
+  }
+}
+
+.width_auto {
+  width: auto;
+}
+
+.width_fit_content {
+  width: fit-content;
+}
+
+@media (max-width: 1024px) {
+  @each $value in $width-list {
+    .width_md_#{$value} {
+      width: #{$value}px;
+    }
+  }
+
+  @each $value in $width-percent-list {
+    .width_md_#{$value}_percent {
+      width: #{$value * 1%};
+    }
+  }
+
+  .width_md_fit_content {
+    width: fit-content;
+  }
+
+  .width_md_auto {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  @each $value in $width-list {
+    .width_sm_#{$value} {
+      width: #{$value}px;
+    }
+  }
+
+  @each $value in $width-percent-list {
+    .width_sm_#{$value}_percent {
+      width: #{$value * 1%};
+    }
+  }
+
+  .width_sm_fit_content {
+    width: fit-content;
+  }
+
+  .width_sm_auto {
+    width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  @each $value in $width-list {
+    .width_xs_#{$value} {
+      width: #{$value}px;
+    }
+  }
+
+  @each $value in $width-percent-list {
+    .width_xs_#{$value}_percent {
+      width: #{$value * 1%};
+    }
+  }
+
+  .width_xs_fit_content {
+    width: fit-content;
+  }
+
+  .width_xs_auto {
+    width: auto;
+  }
+}

@@ -1,0 +1,69 @@
+@import '../variables/variables.scss';
+
+.primary_theme_color {
+  color: $primary-theme-color;
+}
+
+.primary_theme_hover_color {
+  color: $primary-theme-hover-color;
+}
+
+.primary_theme_color-hover:hover {
+  color: $primary-theme-color;
+}
+
+.primary_theme_hover_color-hover:hover {
+  color: $primary-theme-hover-color;
+}
+
+.highlight_theme_color-hover:hover {
+  color: $highlight-theme-color;
+}
+
+.highlight_theme_color {
+  color: $highlight-theme-color;
+}
+
+.primary_text_color {
+  color: $primary-text-color;
+}
+
+.secondary_heading_text_color {
+  color: $secondary-heading-text-color;
+}
+
+.primary_text_hover_color {
+  color: $primary-hover-text-color;
+}
+
+.primary_text_hover_color-hover:hover {
+  color: $primary-hover-text-color;
+}
+
+.color_red {
+  color: $red;
+}
+
+.color_black {
+  color: black;
+}
+
+.color_white {
+  color: #ffffff;
+}
+
+.color_gray {
+  color: $gray;
+}
+
+.color_white-hover:hover {
+  color: #ffffff;
+}
+
+.bg_white_smoke-hover:hover {
+  background-color: whitesmoke;
+}
+
+.bg_event_caption {
+  background-color: #007dc575;
+}

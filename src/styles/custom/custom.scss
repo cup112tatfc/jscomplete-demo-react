@@ -1,0 +1,8 @@
+.s-menu {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.3s ;
+}
+.open{
+  max-height: 80px !important;
+}

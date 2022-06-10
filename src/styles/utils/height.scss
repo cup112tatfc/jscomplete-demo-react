@@ -1,0 +1,94 @@
+$height-list: 0 2 10 16 20 22 23 24 25 30 35 40 45 48 50 60 70 75 80 100 101 105 125 150 160 183 200 203 210 180 220 324 400 500;
+
+$height-percent-list: 10 20 30 35 40 50 60 70 80 90 100;
+
+@each $value in $height-list {
+  .height_#{$value} {
+    height: #{$value}px;
+  }
+}
+
+@each $value in $height-percent-list {
+  .height_#{$value}_vh {
+    height: #{$value}vh;
+  }
+  .height_#{$value}_percent {
+    height: #{$value * 1%};
+  }
+}
+
+.height_auto {
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  @each $value in $height-list {
+    .height_md_#{$value} {
+      height: #{$value}px;
+    }
+  }
+
+  @each $value in $height-percent-list {
+    .height_md_#{$value}_percent {
+      height: #{$value * 1%};
+    }
+  }
+
+  @each $value in $height-percent-list {
+    .height_md_#{$value}_vh {
+      height: #{$value}vh;
+    }
+  }
+
+  .height_md_auto {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  @each $value in $height-list {
+    .height_sm_#{$value} {
+      height: #{$value}px;
+    }
+  }
+
+  @each $value in $height-percent-list {
+    .height_sm_#{$value}_percent {
+      height: #{$value * 1%};
+    }
+  }
+
+  @each $value in $height-percent-list {
+    .height_sm_#{$value}_vh {
+      height: #{$value}vh;
+    }
+  }
+
+  .height_sm_auto {
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  @each $value in $height-list {
+    .height_xs_#{$value} {
+      height: #{$value}px;
+    }
+  }
+
+  @each $value in $height-percent-list {
+    .height_xs_#{$value}_percent {
+      height: #{$value * 1%};
+    }
+  }
+
+  @each $value in $height-percent-list {
+    .height_xs_#{$value}_vh {
+      height: #{$value}vh;
+    }
+  }
+
+  .height_xs_auto {
+    height: auto;
+  }
+}

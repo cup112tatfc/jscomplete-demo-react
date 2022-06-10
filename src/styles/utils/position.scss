@@ -1,0 +1,269 @@
+$list-top: -9 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 30 40 50 60 70 80 90 95 145;
+
+$list-bottom: -9 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 30 40 50 60 70 80 90 95;
+
+$list-left: -15 -9 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 24 30 40 50 60 70 80 90 120;
+
+$list-right: -15 -9 -7 -6 -5 -4 -3 -2 -1 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 30 40 50 60 70 80 90;
+
+$list-top-percent: 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100;
+
+$list-bottom-percent: 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100;
+
+$list-right-percent: 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100;
+
+$list-left-percent: -100 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100;
+
+.position_relative {
+  position: relative;
+}
+
+.position_absolute {
+  position: absolute;
+}
+
+.position_fixed {
+  position: fixed;
+}
+
+.position_sticky {
+  position: sticky;
+}
+
+@each $top in $list-top {
+  .top_#{$top} {
+    top: #{$top}px;
+  }
+}
+
+@each $bottom in $list-bottom {
+  .bottom_#{$bottom} {
+    bottom: #{$bottom}px;
+  }
+}
+
+@each $left in $list-left {
+  .left_#{$left} {
+    left: #{$left}px;
+  }
+}
+
+@each $right in $list-right {
+  .right_#{$right} {
+    right: #{$right}px;
+  }
+}
+
+// percent
+@each $top in $list-top-percent {
+  .top_#{$top}_percent {
+    top: #{$top * 1%};
+  }
+}
+
+@each $bottom in $list-bottom-percent {
+  .bottom_#{$bottom}_percent {
+    bottom: #{$bottom * 1%};
+  }
+}
+
+@each $right in $list-right-percent {
+  .right_#{$right}_percent {
+    right: #{$right * 1%};
+  }
+}
+
+@each $left in $list-left-percent {
+  .left_#{$left}_percent {
+    left: #{$left * 1%};
+  }
+}
+
+@media (max-width: 1024px) {
+  .position_md_relative {
+    position: relative;
+  }
+
+  .position_md_absolute {
+    position: absolute;
+  }
+
+  .position_md_fixed {
+    position: fixed;
+  }
+
+  @each $top in $list-top {
+    .top_md_#{$top} {
+      top: #{$top}px;
+    }
+  }
+
+  @each $bottom in $list-bottom {
+    .bottom_md_#{$bottom} {
+      bottom: #{$bottom}px;
+    }
+  }
+
+  @each $left in $list-left {
+    .left_md_#{$left} {
+      left: #{$left}px;
+    }
+  }
+
+  @each $right in $list-right {
+    .right_md_#{$right} {
+      right: #{$right}px;
+    }
+  }
+
+  // percent
+  @each $top in $list-top-percent {
+    .top_md_#{$top}_percent {
+      top: #{$top * 1%};
+    }
+  }
+
+  @each $bottom in $list-bottom-percent {
+    .bottom_md_#{$bottom}_percent {
+      bottom: #{$bottom * 1%};
+    }
+  }
+
+  @each $right in $list-right-percent {
+    .right_md_#{$right}_percent {
+      right: #{$right * 1%};
+    }
+  }
+
+  @each $left in $list-left-percent {
+    .left_md_#{$left}_percent {
+      left: #{$left * 1%};
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .position_sm_relative {
+    position: relative;
+  }
+
+  .position_sm_absolute {
+    position: absolute;
+  }
+
+  .position_sm_fixed {
+    position: fixed;
+  }
+
+  @each $top in $list-top {
+    .top_sm_#{$top} {
+      top: #{$top}px;
+    }
+  }
+
+  @each $bottom in $list-bottom {
+    .bottom_sm_#{$bottom} {
+      bottom: #{$bottom}px;
+    }
+  }
+
+  @each $left in $list-left {
+    .left_sm_#{$left} {
+      left: #{$left}px;
+    }
+  }
+
+  @each $right in $list-right {
+    .right_sm_#{$right} {
+      right: #{$right}px;
+    }
+  }
+
+  // percent
+  @each $top in $list-top-percent {
+    .top_sm_#{$top}_percent {
+      top: #{$top * 1%};
+    }
+  }
+
+  @each $bottom in $list-bottom-percent {
+    .bottom_sm_#{$bottom}_percent {
+      bottom: #{$bottom * 1%};
+    }
+  }
+
+  @each $right in $list-right-percent {
+    .right_sm_#{$right}_percent {
+      right: #{$right * 1%};
+    }
+  }
+
+  @each $left in $list-left-percent {
+    .left_sm_#{$left}_percent {
+      left: #{$left * 1%};
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .position_xs_relative {
+    position: relative;
+  }
+
+  .position_xs_absolute {
+    position: absolute;
+  }
+
+  .position_xs_fixed {
+    position: fixed;
+  }
+
+  @each $top in $list-top {
+    .top_xs_#{$top} {
+      top: #{$top}px;
+    }
+  }
+
+  @each $bottom in $list-bottom {
+    .bottom_xs_#{$bottom} {
+      bottom: #{$bottom}px;
+    }
+  }
+
+  @each $left in $list-left {
+    .left_xs_#{$left} {
+      left: #{$left}px;
+    }
+  }
+
+  @each $right in $list-right {
+    .right_xs_#{$right} {
+      right: #{$right}px;
+    }
+  }
+
+  // percent
+  @each $top in $list-top-percent {
+    .top_xs_#{$top}_percent {
+      top: #{$top * 1%};
+    }
+  }
+
+  @each $bottom in $list-bottom-percent {
+    .bottom_xs_#{$bottom}_percent {
+      bottom: #{$bottom * 1%};
+    }
+  }
+
+  @each $right in $list-right-percent {
+    .right_xs_#{$right}_percent {
+      right: #{$right * 1%};
+    }
+  }
+
+  @each $left in $list-left-percent {
+    .left_xs_#{$left}_percent {
+      left: #{$left * 1%};
+    }
+  }
+}

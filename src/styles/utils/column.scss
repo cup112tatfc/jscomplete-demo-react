@@ -1,0 +1,25 @@
+$list-col: 1 2 3 4 5 6 7 8 9 10 11 12;
+
+@each $value in $list-col {
+  .col_#{$value} {
+    width:calc(100% / 12 * #{$value});
+  }
+
+  @media (max-width: 1024px) {
+    .col_md_#{$value} {
+      width:calc(100% / 12 * #{$value});
+    }
+  }
+
+  @media (max-width: 768px) {
+    .col_sm_#{$value} {
+      width:calc(100% / 12 * #{$value});
+    }
+  }
+
+  @media (max-width: 576px) {
+    .col_xs_#{$value} {
+      width:calc(100% / 12 * #{$value});
+    }
+  }
+}

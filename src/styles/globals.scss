@@ -1,0 +1,207 @@
+@import "./utils/background.scss";
+@import "./utils/border.scss";
+@import "./utils/box-shadow.scss";
+@import "./utils/color.scss";
+@import "./utils/column.scss";
+@import "./utils/cursor.scss";
+@import "./utils/display.scss";
+@import "./utils/flex.scss";
+@import "./utils/font-size.scss";
+@import "./utils/font-weight.scss";
+@import "./utils/height.scss";
+@import "./utils/letter-spacing.scss";
+@import "./utils/line-height.scss";
+@import "./utils/margin.scss";
+@import "./utils/max-height.scss";
+@import "./utils/max-width.scss";
+@import "./utils/opacity.scss";
+@import "./utils/padding.scss";
+@import "./utils/position.scss";
+@import "./utils/text-align.scss";
+@import "./utils/width.scss";
+@import "./utils//list-style.scss";
+@import "./utils/text-transform.scss";
+@import "./utils/z-index.scss";
+@import "./utils/transform.scss";
+@import "./utils/float.scss";
+@import "./utils/overflow.scss";
+@import "./utils/hover.scss";
+@import "./utils/visibility.scss";
+@import "./custom/custom.scss";
+// variable
+@import "./variables/variables.scss";
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: $primary-font-size;
+  font-family: "Inter" !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+textarea,
+input {
+  font-size: $primary-font-size;
+  font-family: "Inter" !important;
+  &:focus {
+    outline: none;
+  }
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.input {
+  &:focus {
+    border: 1px solid $primary-theme-color;
+    outline: none;
+    svg,
+    path {
+      color: $primary-theme-color;
+      fill: $primary-theme-color;
+    }
+  }
+}
+
+.button {
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.no_select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+$background: #ffffff;
+$vue-content-placeholders-primary-color: #ffffff !default;
+$vue-content-placeholders-secondary-color: #ffffff !default;
+$vue-content-placeholders-border-radius: 4px !default;
+
+@keyframes loading_placeholder {
+  0% {
+    transform: translate3d(-30%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.loading_placeholder {
+  position: relative;
+  overflow: hidden;
+  background: $vue-content-placeholders-secondary-color;
+  border-radius: $vue-content-placeholders-border-radius;
+
+  &.loading_placeholder--title {
+    background: $vue-content-placeholders-primary-color;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 1000px;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      darken($vue-content-placeholders-secondary-color, 3%) 15%,
+      transparent 30%
+    );
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: loading_placeholder;
+    animation-timing-function: linear;
+  }
+}
+
+.loading {
+  border-radius: 4px;
+  background: linear-gradient(to right, #f0f3f6 5%, #eee 20%, #f0f3f6 35%);
+  border-radius: 4px;
+  animation: loading 10s linear 0s infinite normal forwards;
+}
+
+@keyframes loading {
+  0% {
+    background-position: -500px 0;
+  }
+
+  100% {
+    background-position: 500px 0;
+  }
+}
+
+// #nprogress .bar {
+//   background: $primary-theme-color !important;
+// }
+#nprogress .spinner-icon {
+  display: none;
+}
+
+.text-big {
+  font-size: 1.4em;
+}
+
+.image {
+  text-align: center;
+}

@@ -1,0 +1,10 @@
+@import "../variables/variables.scss";
+
+.hover_underline:hover {
+  text-decoration: underline;
+}
+.hover_li {
+  &:hover {
+    background-color: antiquewhite;
+  }
+}

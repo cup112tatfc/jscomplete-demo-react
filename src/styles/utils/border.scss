@@ -1,0 +1,323 @@
+@import "../variables/variables.scss";
+
+$border-width-list: 0 1 2 3 4 5;
+
+$border-radius-list: 1 2 3 4 5 10 15 20 25 50;
+
+$border-radius-percent-list: 25 50;
+
+$border-style-list: dotted solid dashed unset;
+
+@each $value in $border-width-list {
+  .border_width_#{$value} {
+    border-width: #{$value}px;
+  }
+}
+
+@each $value in $border-width-list {
+  .border_top_width_#{$value} {
+    border-top-width: #{$value}px;
+  }
+
+  .border_bottom_width_#{$value} {
+    border-bottom-width: #{$value}px;
+  }
+
+  .border_left_width_#{$value} {
+    border-left-width: #{$value}px;
+  }
+
+  .border_right_width_#{$value} {
+    border-right-width: #{$value}px;
+  }
+}
+
+
+@each $value in $border-style-list {
+  .border_style_#{$value} {
+    border-style: #{$value};
+  }
+}
+
+@each $value in $border-style-list {
+  .border_top_style_#{$value} {
+    border-top-style: #{$value};
+  }
+}
+
+@each $value in $border-style-list {
+  .border_bottom_style_#{$value} {
+    border-bottom-style: #{$value};
+  }
+}
+
+@each $value in $border-style-list {
+  .border_left_style_#{$value} {
+    border-left-style: #{$value};
+  }
+}
+
+@each $value in $border-style-list {
+  .border_right_style_#{$value} {
+    border-right-style: #{$value};
+  }
+}
+
+.border_color_primary {
+  border-color: $primary-border-color;
+}
+
+.border_color_secondary {
+  border-color: $secondary-border-color;
+}
+
+.border_color_third {
+  border-color: $third-border-color;
+}
+
+.border_color_fourth {
+  border-color: $fourth-border-color;
+}
+
+.border_bottom_color_red {
+  border-bottom-color: $red;
+}
+
+.border_left_color_primary {
+  border-left-color: $primary-theme-color;
+}
+
+@each $value in $border-radius-list {
+  .border_radius_#{$value} {
+    border-radius: #{$value}px;
+  }
+
+  .border_top_left_radius_#{$value} {
+    border-top-left-radius: #{$value}px;
+  }
+
+  .border_top_right_radius_#{$value} {
+    border-top-right-radius: #{$value}px;
+  }
+
+  .border_bottom_left_radius_#{$value} {
+    border-bottom-left-radius: #{$value}px;
+  }
+
+  .border_bottom_right_radius_#{$value} {
+    border-bottom-right-radius: #{$value}px;
+  }
+}
+
+
+@each $value in $border-radius-percent-list {
+  .border_radius_#{$value}_percent {
+    border-radius: #{$value*1%};
+  }
+}
+
+.border-color-primary {
+  border-color: $primary-border-color;
+}
+
+.border-color-secondary {
+  border-color: $secondary-border-color;
+}
+
+.border-color-third {
+  border-color: $third-border-color;
+}
+
+.border_color_theme_highlight {
+  border-color: $highlight-theme-color;
+}
+
+@media (max-width: 1024px) {
+  @each $value in $border-width-list {
+    .border_width_md_#{$value} {
+      border-width: #{$value}px;
+    }
+  }
+
+  @each $value in $border-width-list {
+    .border_top_width_md_#{$value} {
+      border-top-width: #{$value}px;
+    }
+
+    .border_bottom_width_md_#{$value} {
+      border-bottom-width: #{$value}px;
+    }
+
+    .border_left_width_md_#{$value} {
+      border-left-width: #{$value}px;
+    }
+
+    .border_right_width_md_#{$value} {
+      border-right-width: #{$value}px;
+    }
+  }
+
+
+  @each $value in $border-style-list {
+    .border_style_md_#{$value} {
+      border-style: #{$value};
+    }
+  }
+
+  @each $value in $border-radius-list {
+    .border_radius_md_#{$value} {
+      border-radius: #{$value}px;
+    }
+
+    .border_top_left_radius_md_#{$value} {
+      border-top-left-radius: #{$value}px;
+    }
+
+    .border_top_right_radius_md_#{$value} {
+      border-top-right-radius: #{$value}px;
+    }
+
+    .border_bottom_left_radius_md_#{$value} {
+      border-bottom-left-radius: #{$value}px;
+    }
+
+    .border_bottom_right_radius_md_#{$value} {
+      border-bottom-right-radius: #{$value}px;
+    }
+  }
+
+
+  @each $value in $border-radius-percent-list {
+    .border_radius_md_#{$value}_percent {
+      border-radius: #{$value*1%};
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  @each $value in $border-width-list {
+    .border_width_sm_#{$value} {
+      border-width: #{$value}px;
+    }
+  }
+
+  @each $value in $border-width-list {
+    .border_top_width_sm_#{$value} {
+      border-top-width: #{$value}px;
+    }
+
+    .border_bottom_width_sm_#{$value} {
+      border-bottom-width: #{$value}px;
+    }
+
+    .border_left_width_sm_#{$value} {
+      border-left-width: #{$value}px;
+    }
+
+    .border_right_width_sm_#{$value} {
+      border-right-width: #{$value}px;
+    }
+  }
+
+
+  @each $value in $border-style-list {
+    .border_style_sm_#{$value} {
+      border-style: #{$value};
+    }
+  }
+
+  @each $value in $border-radius-list {
+    .border_radius_sm_#{$value} {
+      border-radius: #{$value}px;
+    }
+
+    .border_top_left_radius_sm_#{$value} {
+      border-top-left-radius: #{$value}px;
+    }
+
+    .border_top_right_radius_sm_#{$value} {
+      border-top-right-radius: #{$value}px;
+    }
+
+    .border_bottom_left_radius_sm_#{$value} {
+      border-bottom-left-radius: #{$value}px;
+    }
+
+    .border_bottom_right_radius_sm_#{$value} {
+      border-bottom-right-radius: #{$value}px;
+    }
+  }
+
+
+  @each $value in $border-radius-percent-list {
+    .border_radius_sm_#{$value}_percent {
+      border-radius: #{$value*1%};
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  @each $value in $border-width-list {
+    .border_width_xs_#{$value} {
+      border-width: #{$value}px;
+    }
+  }
+
+  @each $value in $border-width-list {
+    .border_top_width_xs_#{$value} {
+      border-top-width: #{$value}px;
+    }
+
+    .border_bottom_width_xs_#{$value} {
+      border-bottom-width: #{$value}px;
+    }
+
+    .border_left_width_xs_#{$value} {
+      border-left-width: #{$value}px;
+    }
+
+    .border_right_width_xs_#{$value} {
+      border-right-width: #{$value}px;
+    }
+  }
+
+
+  @each $value in $border-style-list {
+    .border_style_xs_#{$value} {
+      border-style: #{$value};
+    }
+  }
+
+  @each $value in $border-radius-list {
+    .border_radius_xs_#{$value} {
+      border-radius: #{$value}px;
+    }
+
+    .border_top_left_radius_xs_#{$value} {
+      border-top-left-radius: #{$value}px;
+    }
+
+    .border_top_right_radius_xs_#{$value} {
+      border-top-right-radius: #{$value}px;
+    }
+
+    .border_bottom_left_radius_xs_#{$value} {
+      border-bottom-left-radius: #{$value}px;
+    }
+
+    .border_bottom_right_radius_xs_#{$value} {
+      border-bottom-right-radius: #{$value}px;
+    }
+  }
+
+
+  @each $value in $border-radius-percent-list {
+    .border_radius_xs_#{$value}_percent {
+      border-radius: #{$value*1%};
+    }
+  }
+}
+
+.border_none {
+  border: none;
+}

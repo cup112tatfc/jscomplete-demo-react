@@ -1,0 +1,7 @@
+$list-z-index: 1 2 3 4 5 999 1000;
+
+@each $value in $list-z-index {
+  .z_index_#{$value} {
+    z-index: #{$value};
+  }
+}

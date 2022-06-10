@@ -1,0 +1,69 @@
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+.float_none {
+  float: none;
+}
+
+.float_inherit {
+  float: inherit;
+}
+
+@media (max-width: 1024px) {
+  .float_md_left {
+    float: left;
+  }
+
+  .float_md_right {
+    float: right;
+  }
+
+  .float_md_none {
+    float: none;
+  }
+
+  .float_md_inherit {
+    float: inherit;
+  }
+}
+
+@media (max-width: 768px) {
+  .float_sm_left {
+    float: left;
+  }
+
+  .float_sm_right {
+    float: right;
+  }
+
+  .float_sm_none {
+    float: none;
+  }
+
+  .float_sm_inherit {
+    float: inherit;
+  }
+}
+
+@media (max-width: 576px) {
+  .float_xs_left {
+    float: left;
+  }
+
+  .float_xs_right {
+    float: right;
+  }
+
+  .float_xs_none {
+    float: none;
+  }
+
+  .float_xs_inherit {
+    float: inherit;
+  }
+}

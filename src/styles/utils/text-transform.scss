@@ -1,0 +1,21 @@
+.text_transform_capitalize {
+  text-transform: capitalize;
+}
+
+.text_transform_lowercase {
+  text-transform: lowercase;
+}
+
+.text_transform_uppercase {
+  text-transform: uppercase;
+}
+
+.white_space_nowrap {
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}

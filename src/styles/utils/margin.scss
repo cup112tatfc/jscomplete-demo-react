@@ -1,0 +1,183 @@
+$list-margin: -10 -5 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 48 50 60 64 80 87 100;
+
+.margin_auto {
+  margin: auto;
+}
+
+@each $value in $list-margin {
+  .margin_#{$value} {
+    margin: #{$value}px;
+  }
+
+  .margin_x_#{$value} {
+    margin-left: #{$value}px;
+    margin-right: #{$value}px;
+  }
+
+  .margin_y_#{$value} {
+    margin-top: #{$value}px;
+    margin-bottom: #{$value}px;
+  }
+
+}
+
+@each $value in $list-margin {
+  .margin_left_#{$value} {
+    margin-left: #{$value}px;
+  }
+
+  .margin_right_#{$value} {
+    margin-right: #{$value}px;
+  }
+
+  .margin_top_#{$value} {
+    margin-top: #{$value}px;
+  }
+
+  .margin_bottom_#{$value} {
+    margin-bottom: #{$value}px;
+  }
+
+}
+
+.margin_top_theme {
+  margin-top: 30px;
+}
+
+.margin_bottom_theme {
+  margin-bottom: 30px;
+}
+
+.margin_y_theme {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .margin_md_auto {
+    margin: auto;
+  }
+
+  @each $value in $list-margin {
+    .margin_md_#{$value} {
+      margin: #{$value}px;
+    }
+
+    .margin_x_md_#{$value} {
+      margin-left: #{$value}px;
+      margin-right: #{$value}px;
+    }
+
+    .margin_y_md_#{$value} {
+      margin-top: #{$value}px;
+      margin-bottom: #{$value}px;
+    }
+
+  }
+
+  @each $value in $list-margin {
+    .margin_left_md_#{$value} {
+      margin-left: #{$value}px;
+    }
+
+    .margin_right_md_#{$value} {
+      margin-right: #{$value}px;
+    }
+
+    .margin_top_md_#{$value} {
+      margin-top: #{$value}px;
+    }
+
+    .margin_bottom_md_#{$value} {
+      margin-bottom: #{$value}px;
+    }
+
+  }
+
+}
+
+@media (max-width: 768px) {
+  .margin_sm_auto {
+    margin: auto;
+  }
+
+  @each $value in $list-margin {
+    .margin_sm_#{$value} {
+      margin: #{$value}px;
+    }
+
+    .margin_x_sm_#{$value} {
+      margin-left: #{$value}px;
+      margin-right: #{$value}px;
+    }
+
+    .margin_y_sm_#{$value} {
+      margin-top: #{$value}px;
+      margin-bottom: #{$value}px;
+    }
+
+  }
+
+  @each $value in $list-margin {
+    .margin_left_sm_#{$value} {
+      margin-left: #{$value}px;
+    }
+
+    .margin_right_sm_#{$value} {
+      margin-right: #{$value}px;
+    }
+
+    .margin_top_sm_#{$value} {
+      margin-top: #{$value}px;
+    }
+
+    .margin_bottom_sm_#{$value} {
+      margin-bottom: #{$value}px;
+    }
+
+  }
+
+}
+
+@media (max-width: 576px) {
+  .margin_xs_auto {
+    margin: auto;
+  }
+
+  @each $value in $list-margin {
+    .margin_xs_#{$value} {
+      margin: #{$value}px;
+    }
+
+    .margin_x_xs_#{$value} {
+      margin-left: #{$value}px;
+      margin-right: #{$value}px;
+    }
+
+    .margin_y_xs_#{$value} {
+      margin-top: #{$value}px;
+      margin-bottom: #{$value}px;
+    }
+
+  }
+
+  @each $value in $list-margin {
+    .margin_left_xs_#{$value} {
+      margin-left: #{$value}px;
+    }
+
+    .margin_right_xs_#{$value} {
+      margin-right: #{$value}px;
+    }
+
+    .margin_top_xs_#{$value} {
+      margin-top: #{$value}px;
+    }
+
+    .margin_bottom_xs_#{$value} {
+      margin-bottom: #{$value}px;
+    }
+
+  }
+
+}

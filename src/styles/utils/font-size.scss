@@ -1,0 +1,36 @@
+@import "../variables/variables.scss";
+$list-font-sizes: 8 10 12 13 14 16 18 20 22 24 26 28 30 32 34 36 38 40 45;
+
+@each $value in $list-font-sizes {
+  .font_size_#{$value} {
+    font-size: #{$value}px;
+  }
+}
+
+.primary_font_size {
+  font-size: $primary-font-size;
+}
+
+@media (max-width: 1024px) {
+  @each $value in $list-font-sizes {
+    .font_size_md_#{$value} {
+      font-size: #{$value}px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  @each $value in $list-font-sizes {
+    .font_size_sm_#{$value} {
+      font-size: #{$value}px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  @each $value in $list-font-sizes {
+    .font_size_xs_#{$value} {
+      font-size: #{$value}px;
+    }
+  }
+}

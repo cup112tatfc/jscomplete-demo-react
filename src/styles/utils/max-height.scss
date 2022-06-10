@@ -1,0 +1,122 @@
+$max-height-list: 0 10 20 30 40 50 100 160 220 400 500 700 720;
+
+$max-height-percent-list: 0 10 20 30 40 50 60 70 80 90 100;
+
+@each $value in $max-height-list {
+  .max_height_#{$value} {
+    max-height: #{$value}px;
+  }
+
+  .min_height_#{$value} {
+    min-height: #{$value}px;
+  }
+}
+
+@each $value in $max-height-percent-list {
+  .max_height_#{$value}_percent {
+    max-height: #{$value*1%};
+  }
+
+  .min_height_#{$value}_percent {
+    min-height: #{$value*1%};
+  }
+
+  .max_height_#{$value}_vh {
+    max-height: #{$value}vh;
+  }
+
+  .min_height_#{$value}_vh {
+    min-height: #{$value}vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  @each $value in $max-height-list {
+    .max_height_md_#{$value} {
+      max-height: #{$value}px;
+    }
+
+    .min_height_md_#{$value} {
+      min-height: #{$value}px;
+    }
+  }
+
+  @each $value in $max-height-percent-list {
+    .max_height_md_#{$value}_percent {
+      max-height: #{$value*1%};
+    }
+
+    .min_height_md_#{$value}_percent {
+      min-height: #{$value*1%};
+    }
+
+    .max_height_md_#{$value}_vh {
+      max-height: #{$value}vh;
+    }
+
+    .min_height_md_#{$value}_vh {
+      min-height: #{$value}vh;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  @each $value in $max-height-list {
+    .max_height_sm_#{$value} {
+      max-height: #{$value}px;
+    }
+
+    .min_height_sm_#{$value} {
+      min-height: #{$value}px;
+    }
+  }
+
+  @each $value in $max-height-percent-list {
+    .max_height_sm_#{$value}_percent {
+      max-height: #{$value*1%};
+    }
+
+    .min_height_sm_#{$value}_percent {
+      min-height: #{$value*1%};
+    }
+
+    .max_height_sm_#{$value}_vh {
+      max-height: #{$value}vh;
+    }
+
+    .min_height_sm_#{$value}_vh {
+      min-height: #{$value}vh;
+    }
+  }
+
+}
+
+@media (max-width: 576px) {
+  @each $value in $max-height-list {
+    .max_height_xs_#{$value} {
+      max-height: #{$value}px;
+    }
+
+    .min_height_xs_#{$value} {
+      min-height: #{$value}px;
+    }
+  }
+
+  @each $value in $max-height-percent-list {
+    .max_height_xs_#{$value}_percent {
+      max-height: #{$value*1%};
+    }
+
+    .min_height_xs_#{$value}_percent {
+      min-height: #{$value*1%};
+    }
+
+    .max_height_xs_#{$value}_vh {
+      max-height: #{$value}vh;
+    }
+
+    .min_height_xs_#{$value}_vh {
+      min-height: #{$value}vh;
+    }
+  }
+}

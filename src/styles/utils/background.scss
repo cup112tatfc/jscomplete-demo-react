@@ -1,0 +1,49 @@
+@import "../variables/variables.scss";
+
+.bg_primary {
+  background-color: $primary-theme-color;
+}
+
+.bg_primary_hover {
+  background-color: $primary-theme-hover-color;
+}
+
+.bg_primary_hover-hover:hover {
+  background-color: $primary-theme-hover-color;
+}
+
+.bg_yellow {
+  background-color: $yellow;
+}
+
+.bg_red {
+  background-color: $red;
+}
+
+.bg_gray {
+  background-color: $gray;
+}
+
+.bg_orange {
+  background-color: $orange;
+}
+
+.bg_highlight {
+  background-color: $highlight-theme-color
+}
+
+.bg_white {
+  background-color: $primary-background-color;
+}
+
+.bg_whitesmoke {
+  background-color: $white-smoke;
+}
+
+.bg_gray_smoke {
+  background-color: $background_gray_smoke;
+}
+
+.bg_whitesmoke-hover:hover {
+  background-color: $white-smoke;
+}

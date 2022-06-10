@@ -1,0 +1,38 @@
+$list-font-weight: 100 200 300 400 500 600 700 800 900 bold bolder;
+
+@each $value in $list-font-weight {
+  .font_weight_#{$value} {
+    font-weight: #{$value};
+  }
+}
+
+@each $value in $list-font-weight {
+  .font_weight_#{$value}-hover:hover {
+    font-weight: #{$value};
+  }
+}
+
+@media (max-width: 1024px) {
+  @each $value in $list-font-weight {
+    .font_weight_md_#{$value} {
+      font-weight: #{$value};
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  @each $value in $list-font-weight {
+    .font_weight_sm_#{$value} {
+      font-weight: #{$value};
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  @each $value in $list-font-weight {
+    .font_weight_xs_#{$value} {
+      font-weight: #{$value};
+    }
+  }
+}

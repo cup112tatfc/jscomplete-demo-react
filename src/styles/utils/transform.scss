@@ -1,0 +1,24 @@
+$list-rotate-deg: -90 -45 -30 -25 -20 -15 -10 -5 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 180;
+
+@each $value in $list-rotate-deg {
+  .rotate_#{$value} {
+    transform: rotate(#{$value}deg);
+  }
+}
+
+.object_fit_cover {
+  object-fit: cover;
+}
+
+.object_fit_contain {
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}

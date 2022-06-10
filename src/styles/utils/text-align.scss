@@ -1,0 +1,31 @@
+$list-text-align: center left right;
+
+@each $value in $list-text-align {
+  .text_align_#{$value} {
+    text-align: #{$value};
+  }
+}
+
+@media (max-width: 1024px) {
+  @each $value in $list-text-align {
+    .text_align_md_#{$value} {
+      text-align: #{$value};
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  @each $value in $list-text-align {
+    .text_align_sm_#{$value} {
+      text-align: #{$value};
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  @each $value in $list-text-align {
+    .text_align_xs_#{$value} {
+      text-align: #{$value};
+    }
+  }
+}
